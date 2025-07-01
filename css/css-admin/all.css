@@ -1,0 +1,284 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    font-family: 'Poppins',sans-serif;
+}
+
+.sidebar {
+    width: 200px;
+    background: #1e1e2f;
+    color: #ffffff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    transition: 1s;
+    z-index: 1;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.54);
+}
+
+.sidebar-title{
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    text-align: center;
+    padding: 20px 0px;
+
+}
+
+.sidebar-title img {
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    
+}
+
+.sidebar ul{
+    margin-top: 1px;
+}
+
+
+.sidebar ul li{
+    list-style: none;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    display: block;
+    margin-left: -40px;
+    transition: 0.3s ease;
+    padding-left: 20px;
+}
+
+.sidebar ul li a:hover{
+    background-color: #eb6200;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 25px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.66) inset;
+}
+
+.sidebar-span {
+    margin-left: 20px;
+}
+
+.section{
+    position: relative;
+    width: auto;
+    transition: 1s;
+    padding: 10px 10px 10px 220px;
+}
+
+.btn{
+    text-decoration: none;
+    background-color: #ff640a;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    margin-left: 100px;
+}
+
+.btn:hover {
+    padding: 12px 16px;
+    background-color: #333;
+    color: #fff;
+}
+
+.action-btn{
+    text-decoration: none;
+    background-color: #ff640a;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    padding: 3px 12px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.action-btn:hover {
+    padding: 8px 14px;
+    background-color: #333;
+    color: #fff;
+}
+
+.section h1{
+    color: #000000;
+}
+
+.card-title {
+    text-align: center;
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+}
+
+form {
+    max-width: 480px;
+    margin-left: 30px;
+}
+
+.table1 {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #e4e4e4;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 14px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    table-layout: fixed;
+}
+
+.table1 tr th{
+    background: #ff640a;
+    color: #000000;
+    font-weight: normal;
+}
+
+.table1, th, td {
+    padding: 8px 20px;
+    text-align: center;
+    padding: 12px 16px;
+}
+
+.table1 tr {
+    background-color: #878787;
+    color: #ffffff;
+}
+
+.table1 tr:nth-child(even){
+    background-color: #707070;
+}
+
+
+.table1{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.title-tambah {
+    margin-bottom: 10px;
+}
+
+
+.kotak-tambah{
+    background-color: #878787;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+}
+
+.kotak-edit fieldset{
+    border: none;
+}
+
+.title-edit{
+        margin-bottom: 10px;
+}
+
+.kotak-edit{
+    background-color: #878787;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+}
+
+.kotak-tambah fieldset{
+    border: none;
+}
+
+.input-edit {
+    color:#ffffff
+}
+
+#contact-submit{
+    background-color: #ff640a;
+    padding: 8px 20px;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+#contact-submit:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.section hr {
+    width: 90%;
+    margin-right: 75px;
+    margin-bottom: 20px;
+    color: #878787;
+    border: 2px solid #878787;
+}
+
+.container form hr{
+    width: 90%;
+    margin-right: 75px;
+    margin-bottom: 25px;
+    color: #878787;
+    border: 2px solid #878787;
+}
+
+.title-profil{
+    color: #000000;
+}
+
+
+.kotak-profil{
+    background-color: #878787;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+}
+
+.kotak-password{
+    background-color: #878787;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+}
+
+.kotak-profil fieldset{
+    border: none;
+}
+
+.kotak-password fieldset{
+    border: none;
+}
+
+.hr-profil{
+    width: 90%;
+    margin-right: 75px;
+    margin-bottom: 50px;
+    color: #878787;
+    border: 2px solid #878787;
+}
+
+.hr-password{
+    width: 90%;
+    margin-right: 75px;
+    margin-bottom: 25px;
+    color: #878787;
+    border: 2px solid #878787;
+}
+
+.hr-edit{
+    width: 90%;
+    margin-right: 75px;
+    margin-bottom: 25px;
+    color: #878787;
+    border: 2px solid #878787;
+}

@@ -1,0 +1,171 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+    background-color: #050607;
+    color: #c9d1d9;
+    height: 100%;
+    line-height: 1.6;
+}
+
+main {
+    background-color: #050607;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Header (if used) */
+
+/* header {
+    background-color: #000;
+    padding: 1.5rem;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+} */
+
+/* Section Title */
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-left: 5px solid #2fe62f;
+    padding-left: 12px;
+}
+
+/* Card or Box Style */
+.box {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 16px rgba(47, 230, 47, 0.05);
+    margin-top: 20px;
+}
+
+/* Table */
+.table-complete {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #161b22;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(47, 230, 47, 0.05);
+}
+
+.table-complete thead th {
+    background-color: #1f242d;
+    color: #c9d1d9;
+    padding: 12px 16px;
+    font-size: 18px;
+    text-align: left;
+    border-bottom: 1px solid #2fe62f33;
+    text-transform: uppercase;
+}
+
+.table-complete tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.table-complete tbody tr:hover {
+    background-color: rgba(47, 230, 47, 0.04);
+}
+
+/* Badge or status style */
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+    background-color: #2fe62f;
+}
+
+/* Cancel Button */
+.btn-cancel {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.btn-cancel:hover {
+    background-color: #ff4c4c;
+}
+
+/* General Buttons */
+.btn {
+    padding: 12px 24px;
+    background-color: #39ff14;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background: #00cc66;
+    box-shadow: 0 0 12px #00cc66;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #000;
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* Responsive Table for Mobile */
+@media (max-width: 768px) {
+    .table-complete thead {
+        display: none;
+    }
+    .table-complete,
+    .table-complete tbody,
+    .table-complete tr,
+    .table-complete td {
+        display: block;
+        width: 100%;
+    }
+    .table-complete td {
+        padding: 10px;
+        text-align: right;
+        position: relative;
+    }
+    .table-complete td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        color: #999;
+    }
+}

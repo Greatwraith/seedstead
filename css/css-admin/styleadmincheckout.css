@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    background: #1A1A19;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .sidebar-title {
+    background-color: #219B9D;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding-top: 4%;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    font-size: 18px;
+    padding: 5px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.sidebar ul li a {
+    font-family: Verdana;
+    color: #EEEEEE;
+    display: block;
+    padding: 9px;
+    margin-left: -20px;
+}
+
+.sidebar ul li:hover {
+    background: #3e3c3c;
+    color: #211718;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 20vw;
+    width: 80vw;
+    height: 90px;
+    z-index: 1000;
+}
+
+.header .header-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 18px;
+    background: #C2FFC7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container-section {
+    margin-top: 100px;
+    padding: 20px;
+    width: 80%;
+    margin-left: 20vw;
+}
+
+.section .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.table-container {
+    overflow-x: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.table1 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.75rem; /* diperkecil dari 0.9rem */
+    table-layout: fixed; /* membatasi ukuran kolom */
+}
+
+.table1 th, .table1 td {
+    padding: 5px; /* dikurangi dari 8px */
+    text-align: center;
+    border: 0.7px solid #746f6f;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.75rem; /* font lebih kecil */
+}
+
+/* Gambar produk dan bukti transfer */
+.table1 img {
+    width: 35px; /* diperkecil dari 50px */
+    height: auto;
+    object-fit: cover;
+}
+
+
+.table1 th {
+    background-color: #219B9D;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* border-bottom: 3px solid #197779; */
+}
+
+
+.table1 tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table1 tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.table1 tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table1 td a {
+    color: #219B9D;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.address-text {
+    text-align: justify;
+    line-height: 1.6;
+    padding: 5px;
+}
+
+
+
+
+.table1 td a:hover {
+    color: #176d6f;
+    text-decoration: underline;
+}
+
+.compact-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+
+/* .btn-address {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 5px 10px;
+    background-color: #219B9D;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+} */
+
+.btn-address:hover {
+    background-color: #176d6f;
+}
+
+
+/* Membuat teks di dalam sel tabel bisa turun ke bawah */
+.wrap-text {
+    white-space: normal !important; /* penting untuk mengatasi nowrap bawaan */
+    word-wrap: break-word;
+    text-align: left; /* opsional: agar teks rata kiri */
+    max-width: 150px; /* batasi lebar agar teks tidak melebar */
+}

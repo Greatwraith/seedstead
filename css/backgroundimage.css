@@ -1,0 +1,32 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-image: url(../alltheimages/plant-2004483.jpg);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+
+    /* the opacity property specifies the transparency of an element*/
+    /* when applied to an element it changes everything, not just the background-image. */
+    opacity: 1;    
+    /*  opacity : 1 is default */ 
+    /*  opacity : 0 is completely transparent  */
+    /*  opacity : 0.5 is the halfway mark */
+    
+}
+
+.warn {
+    font-style: italic;
+    text-align: left;
+    font-size: 16px;
+}
+
+footer {
+    height: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    margin-left: 7px;
+    margin-bottom: 0px;
+    
+}

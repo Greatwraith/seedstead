@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #050607;
+    color: #c9d1d9;
+    height: 100%;
+    line-height: 1.6;
+}
+
+.logo {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+.logo img  {
+    height:60px; 
+    width: auto; 
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    background-color: #111;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.container.detail-produk {
+    color: #fff6f6;
+    max-width: 1150px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+}
+
+.detail-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.detail-image {
+    flex: 1 1 40%;
+    max-width: 450px;
+}
+
+.detail-image img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.detail-info {
+    flex: 1 1 55%;
+}
+
+.detail-info h2 {
+    font-size: 44px;
+    margin-bottom: 16px;
+    color: black;
+}
+
+.detail-info .harga {
+    margin-bottom: 1rem;
+    font-size: 26px;
+    font-weight: 700;
+    color: black;
+}
+
+.stok {
+    font-size: 18px;
+    margin-bottom: 0.4rem;
+    color: #575757;
+}
+
+.deskripsi {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #535353;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.form-beli {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.form-beli input[type="number"] {
+    width: 3rem;
+    padding: 6px 8px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.form-beli .quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f9fc;
+    padding: 8px 12px;
+    width: fit-content;
+    
+}
+
+.form-beli .qty-btn {
+    background: none;
+    border: none;
+    color: #05a836;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 0 12px;
+    font-weight: bold;
+    user-select: none;
+    outline: none;
+}
+
+.form-beli .qty-btn:hover,
+.form-beli .qty-btn:focus,
+.form-beli .qty-btn:active {
+    background: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: #05a836;
+}
+
+.form-beli .input-jml {
+    border: none;
+    background: none;
+    text-align: center;
+    font-size: 18px;
+    width: 30px;
+    pointer-events: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Remove number arrows (Chrome, Safari, Edge) */
+.input-jml::-webkit-inner-spin-button, 
+.input-jml::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-beli button,
+.add-to-cart {
+    padding: 12px 22px;
+    background-color: #05a836;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 1 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+.form-beli button:hover,
+.add-to-cart:hover {
+    background-color: #0dba55;
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(39, 174, 96, 0.4);
+}
+
+.qty-cart-row {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-top: 16px;
+    margin-left: -19px; /* tambahkan ini untuk geser ke kiri */
+}
+
+
+@media (max-width: 768px) {
+    .detail-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-image,
+    .detail-info {
+        width: 100%;
+    }
+
+    .form-beli {
+        align-items: flex-start;
+    }
+}

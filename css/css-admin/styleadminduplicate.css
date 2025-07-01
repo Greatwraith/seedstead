@@ -1,0 +1,86 @@
+/* Tambahkan ini ke styleadmin.css atau styleadminduplicate.css */
+
+.table-container {
+    width: 95%;
+    margin: 20px auto;
+    overflow-x: auto;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.table1 {
+    width: 100%;
+    min-width: 1000px; /* Lebar minimum tabel */
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.table1 th {
+    padding: 12px 8px;
+    background-color: #219B9D;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 90px; /* Sesuaikan dengan tinggi header */
+    z-index: 10;
+}
+
+.table1 td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Responsive table */
+@media (max-width: 1200px) {
+    .table-container {
+        width: 100%;
+        margin: 20px 0;
+        padding: 0;
+    }
+    
+    .table1 {
+        font-size: 13px;
+    }
+    
+    .table1 th, 
+    .table1 td {
+        padding: 8px 5px;
+    }
+}
+
+/* Warna baris dan hover */
+.table1 tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table1 tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Style untuk gambar dalam tabel */
+.table1 img {
+    max-width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style untuk mark (status validasi) */
+.table1 mark {
+    padding: 3px 6px;
+    border-radius: 3px;
+    background-color: #ffeb3b;
+}
+
+/* Style untuk link aksi */
+.table1 a {
+    color: #219B9D;
+    text-decoration: none;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.table1 a:hover {
+    text-decoration: underline;
+}
