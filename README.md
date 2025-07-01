@@ -2,7 +2,7 @@
 
 **Seedstead** is a final project developed by our team for Grade 10 at SMK Telkom Banjarbaru, designed to build an **e-commerce platform for plant seedlings and seeds**. The primary objective of this project is to provide an online marketplace for plant seedlings with a simple, intuitive, and user-friendly interface for both administrators and users.
 
-This application is built using **Native PHP** with support from **HTML, CSS, and JavaScript** without relying on external frameworks. Separate dashboards are provided for **users** and **administrators** to ensure efficient transaction management and monitoring.
+This Web is built using **Native PHP** with support from **HTML, CSS, and JavaScript** without relying on external frameworks. Separate dashboards are provided for **users** and **administrators** to ensure efficient transaction management and monitoring.
 
 > ⚠️ This project is **not yet 100% complete** and is **still under active development**. Some features are not fully responsive on smaller screens, and we plan to continuously improve this project in the future, including enhancements to UI/UX design, security, and scalability.
 
