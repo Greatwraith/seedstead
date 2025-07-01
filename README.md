@@ -1,148 +1,143 @@
-# 🌱 Seedstead - E-commerce Bibit Tanaman
+# 🌱 Seedstead - Plant Seedling E-commerce Platform
 
-**Seedstead** adalah proyek akhir kelas 10 SMK Telkom Banjarbaru yang dikembangkan oleh tim kami untuk membangun situs **e-commerce jual beli bibit/benih tanaman**. Tujuan utama dari proyek ini adalah untuk menyediakan platform penjualan bibit tanaman secara daring dengan tampilan yang sederhana, intuitif, dan mudah digunakan oleh admin maupun user.
+**Seedstead** is a final project developed by our team for Grade 10 at SMK Telkom Banjarbaru, designed to build an **e-commerce platform for plant seedlings and seeds**. The primary objective of this project is to provide an online marketplace for plant seedlings with a simple, intuitive, and user-friendly interface for both administrators and users.
 
-Aplikasi ini dibuat dengan menggunakan **PHP Native**, serta dukungan **HTML, CSS, dan JavaScript** tanpa menggunakan framework eksternal. Dashboard disediakan secara terpisah untuk **pengguna (user)** dan **administrator (admin)** agar pengelolaan dan pemantauan transaksi lebih efisien.
+This application is built using **Native PHP** with support from **HTML, CSS, and JavaScript** without relying on external frameworks. Separate dashboards are provided for **users** and **administrators** to ensure efficient transaction management and monitoring.
 
-> ⚠️ Proyek ini **belum 100% sempurna** dan **masih dalam tahap pengembangan**. Beberapa fitur belum responsif penuh di layar kecil, dan Saya berencana untuk terus menyempurnakan proyek ini ke depannya, termasuk peningkatan desain UI/UX, keamanan, dan skalabilitas.
+> ⚠️ This project is **not yet 100% complete** and is **still under active development**. Some features are not fully responsive on smaller screens, and we plan to continuously improve this project in the future, including enhancements to UI/UX design, security, and scalability.
 
 ---
 
-## 🔥 Fitur Utama
+## 🔥 Key Features
 
-### 💼 Halaman Publik
-- `index.php` → Beranda (About & Banner)
-- `products.php` → Daftar semua produk bibit
-- `login.php` dan `register.php` → Form login dan pendaftaran user
-- Fitur **searching produk**
-- Fitur **filter berdasarkan kategori produk**
+### 💼 Public Pages
+- `index.php` → Homepage (About & Banner)
+- `products.php` → Complete product catalog
+- `login.php` and `register.php` → User authentication forms
+- **Product search functionality**
+- **Category-based filtering system**
 
-### 👤 Dashboard User (Setelah Login)
-- Home Dashboard (navigasi ke semua fitur)
-- **Checkout** → Menampilkan produk yang telah dipilih dan menunggu pembayaran
-- **Pending Order** → Daftar pesanan yang masih menunggu validasi/pemrosesan oleh admin
-- **Completed Orders** → Riwayat pesanan yang sudah selesai
-- **Canceled Orders** → Daftar pesanan yang dibatalkan
-- **Shopping Cart** → Keranjang belanja pengguna
-- **Profile** → Informasi dan data pengguna
+### 👤 User Dashboard (Post-Login)
+- Home Dashboard (navigation hub for all features)
+- **Checkout** → Display selected products awaiting payment
+- **Pending Orders** → Orders awaiting admin validation/processing
+- **Completed Orders** → Order history and completed transactions
+- **Canceled Orders** → List of canceled orders
+- **Shopping Cart** → User shopping cart management
+- **Profile** → User account information and settings
 - **Logout**
 
-### 🛠️ Dashboard Admin
-- **Manajemen Produk** → Tambah, edit, hapus produk
-- **Validasi Pesanan** → Melihat & memproses pesanan user
-- **Manajemen Status Pesanan** → Melacak pesanan berdasarkan status (checkout, pending, complete, cancel)
-- **Manajemen Akun Pengguna**
+### 🛠️ Admin Dashboard
+- **Product Management** → Add, edit, and delete products
+- **Order Validation** → Review and process user orders
+- **Order Status Management** → Track orders by status (checkout, pending, complete, canceled)
+- **User Account Management**
 
 ---
 
-## 🧱 Tech Stack
+## 🧱 Technology Stack
 
-| Teknologi | Deskripsi                      |
-|-----------|--------------------------------|
-| PHP       | Backend server-side (native)   |
-| MySQL     | Database relasional            |
-| HTML5     | Struktur halaman web           |
-| CSS3      | Styling dan layout halaman     |
-| JavaScript |  interaksi UI untuk Banner    |
-| Git       | Version control system         |
-| GitHub    | repository dan kolaborasi      |
-
----
-
-
-> Beberapa file seperti validasi keamanan dan logika kompleks belum terpisah secara modular — akan disempurnakan di pengembangan berikutnya.
-
-
+| Technology | Description                    |
+|------------|--------------------------------|
+| PHP        | Server-side backend (native)   |
+| MySQL      | Relational database            |
+| HTML5      | Web page structure             |
+| CSS3       | Styling and page layout        |
+| JavaScript | UI interactions for banner     |
+| Git        | Version control system         |
+| GitHub     | Repository and collaboration   |
 
 ---
 
-## ⚙️ Cara Menjalankan Secara Lokal
+> Some files such as security validation and complex logic are not yet modularly separated — this will be improved in future development iterations.
 
-1. **Clone repository ini**
+---
+
+## ⚙️ Local Setup Instructions
+
+1. **Clone this repository**
 
 ```bash
 git clone https://github.com/Greatwraith/seedstead.git
 ```
 
-
-2. **Pindahkan ke direktori XAMPP**
+2. **Move to XAMPP directory**
 
 ```bash
 C:\xampp\htdocs\seedstead
 ```
 
+3. **Create new database in phpMyAdmin**
 
-3. **Buat database baru di phpMyAdmin**
-
-Nama database: 
+Database name: 
 ```seedstead```
 
 Import file: ```ujian_blok6.sql```
 
+4. **Configure database connection in /database/config.php**
 
-4. **Atur koneksi database di /database/config.php**
-
-```bash
+```php
 $host = 'localhost';
 $user = 'root';
 $pass = '';
 $dbname = 'seedstead';
 ```
 
+5. **Use XAMPP/MAMP/LARAGON**
 
-5. **Gunakan XAMPP/MAMP/LARAGON**
+Start web server (Apache), database (MySQL/MariaDB), and programming language services (PHP, Perl)
 
-jalankan server web (Apache), basis data (MySQL/MariaDB), dan bahasa pemrograman (PHP, Perl) 
+6. **Access via browser**
 
-
-
-6. **Akses melalui browser**
-
+```
 http://localhost/seedstead
+```
 
+---
 
+## ❗ Current Limitations
 
+> Mobile responsiveness on small devices (smartphones) is not optimal
 
+> Display is better optimized for devices at least tablet-sized (Galaxy Fold2 or larger)
 
-❗ Kendala Saat Ini
+> Security measures and file structure will be enhanced in subsequent versions
 
-> Responsivitas pada perangkat mobile kecil (HP) belum maksimal
+---
 
-> Tampilan lebih optimal di perangkat minimal seukuran tablet (Galaxy Fold2 atau lebih besar)
+## 📌 Future Development Roadmap
 
-> Keamanan dan struktur file akan ditingkatkan di versi selanjutnya
+> Admin and user notification system (e.g., order status updates)
+> Full responsive design implementation (mobile-first approach)
+> Project migration to Laravel Framework
 
+---
 
+## 🤝 Contributors
 
+**👨‍💻 M. Ardhan Rahman**  
+Role: Lead Programmer | Project Coordinator  
+GitHub: @Greatwraith  
+Responsibilities: Project Ideation, Team Leadership, UI/UX Design, Backend & Frontend Development, Project Architecture, GitHub Maintenance, Database Management
 
-📌 Rencana Pengembangan Selanjutnya
+**👨‍💻 Ricky Stevan**  
+Role: Frontend Developer  
+Responsibilities: Project Ideation, UI/UX Design, Frontend Development, Assistant Team Leader
 
-> Notifikasi admin dan user (e.g., status pesanan)
-> Desain responsif penuh (mobile-first)
-> Duplikat Proyek menggunakan Framework Laravel
+**👨‍💻 Javaren**  
+Role: Documentation & Presentation Specialist  
+Responsibilities: Proposal Writing, Presentation Development, Project Ideation, Design Consultation
 
+---
 
+---
 
+## 🙏 Acknowledgments
 
+We extend our heartfelt gratitude to each team member who contributed their unique skills and dedication to make Seedstead a reality. This project would not have been possible without the collaborative effort, creative ideas, and unwavering commitment of M. Ardhan Rahman, Ricky Stevan, and Javaren. Each member brought their expertise to different aspects of the project, from technical development to documentation and presentation, creating a well-rounded and comprehensive e-commerce platform. Their professionalism, problem-solving abilities, and teamwork throughout the development process have been instrumental in achieving our project goals.
 
+Above all, we are deeply grateful to Almighty God for His blessings and guidance throughout this journey, enabling us to overcome challenges and complete this project successfully. We also express our sincere appreciation to our teachers and mentors at SMK Telkom Banjarbaru for their invaluable guidance, constructive feedback, and continuous support. Their expertise and encouragement have not only helped us technically but also shaped our understanding of professional software development practices. This project stands as a testament to the power of collaboration, divine guidance, and quality education.
 
-🤝 Kontributor
+---
 
-👨‍💻 M. Ardhan Rahman
-Role: Programmer | Project Coordinator
-GitHub: @Greatwraith
-Tugas: IDEA, Leader, Design, Backend, Frontend, Struktur Proyek, GitHub Maintainer, Database Manager
-
-👨‍💻 Ricky Stevan
-Role: Programmer
-Tugas: IDEA, Design, Frontend, 2nd Leader
-
-👨‍💻 Javaren
-Role: Documentation & Presentation Specialist
-Tugas: Proposal Writer, Presentation Maker, IDEA, Design
-
-Proyek Akhir Kelas X – SMK Telkom Banjarbaru, Tahun Ajaran 2024/2025
-
-
-
-
+**Final Project - Grade X | SMK Telkom Banjarbaru | Academic Year 2024/2025**
